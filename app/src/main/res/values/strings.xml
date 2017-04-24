@@ -22,4 +22,7 @@
     <string name="openstreetmap" translatable="false">OpenStreetMap</string>
     <string name="geouri" translatable="false">GeoURI</string>
 
+    <string name="tracking" translateble="false">Live Tracking</string>
+    <string name="serverAddr" translatable="false">server address</string>
+
 </resources>

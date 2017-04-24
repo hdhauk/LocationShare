@@ -24,6 +24,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView progressTitle;
     private ProgressBar progressBar;
     private TextView detailsText;
+    private EditText serverAddr;
 
     private Button shareButton;
     private Button copyButton;
@@ -77,6 +79,9 @@ public class MainActivity extends AppCompatActivity {
         shareButton = (Button)findViewById(R.id.shareButton);
         copyButton = (Button)findViewById(R.id.copyButton);
         viewButton = (Button)findViewById(R.id.viewButton);
+
+        // Tracking area
+        serverAddr = (EditText)findViewById(R.id.serverAddr);
 
         locManager = (LocationManager)getSystemService(LOCATION_SERVICE);
     }
